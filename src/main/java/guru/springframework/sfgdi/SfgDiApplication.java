@@ -29,7 +29,7 @@ public class SfgDiApplication {
 
         System.out.println("--- Constructor ---");
         ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
-        String greetingConst = setterInjectedController.getGreeting();
+        String greetingConst = constructorInjectedController.getGreeting();
         System.out.println(greetingConst);
     }
 
